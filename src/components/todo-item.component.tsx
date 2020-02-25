@@ -6,7 +6,7 @@ interface Props {
     todo: TodoItem;
 }
 
-export const TodoItemComponent = ({ todo }: Props) => {
+export function TodoItemComponent ({ todo }: Props) {
     const todoList = useStore();
     const [newText, setText] = useState('');
     const [isEditing, setEdit] = useState(false);

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useStore } from "../App";
 
-export const TodoNewComponent = () => {
+export function TodoNewComponent() {
     const [newTodo, setTodo] = useState('');
     const todoList = useStore();
 

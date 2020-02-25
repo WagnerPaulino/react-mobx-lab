@@ -3,7 +3,7 @@ import { useStore } from "../App";
 import { useObserver } from 'mobx-react';
 import { TodoItemComponent } from "./todo-item.component";
 
-export const TodoListComponent = () => {
+export function TodoListComponent() {
     const todoList = useStore();
 
     return useObserver(() => (
